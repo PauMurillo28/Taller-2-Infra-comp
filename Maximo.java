@@ -63,7 +63,7 @@ public class Maximo {
         e.printStackTrace();
     }
 
-    System.out.println("Valor mï¿½ximo: " + valorMaximo);
+    System.out.println("Valor máximo: " + valorMaximo);
 }
 
 
