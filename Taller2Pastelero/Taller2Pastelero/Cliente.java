@@ -1,10 +1,11 @@
+package Taller2Pastelero;
 import java.util.Random;
 
-public class cliente extends Thread{
+public class Cliente extends Thread{
 
-    pastel pastel;
+    Pastel pastel;
 
-    public cliente(pastel pastel){
+    public Cliente(Pastel pastel){
         this.pastel = pastel;
 
     }

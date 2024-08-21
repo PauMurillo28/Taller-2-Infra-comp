@@ -1,15 +1,25 @@
-public class Pastel {
+package Taller2Pastelero;
 
+import java.util.Random;
+
+public class Pastel {
+    Random randi = new Random();
     private int alto;
     private int radio;
     private String sabor;
     private String color;
+    private enum Colores{
+        AMARILLO,AZUL,ROJO,BLANCO,NEGRO
+    }
+    private enum Sabores{
+        VAINILLA, RED_VELVET,MORAZUL,CHOCOLATE, FRESA
+    }
 
-    public pastel(int alto, int radio, String sabor, String color) {
-        this.alto = alto;
-        this.radio = radio;
-        this.sabor = sabor;
-        this.color = color;
+    public Pastel() {
+        this.alto = randi.nextInt(20)+1;
+        this.radio = randi.nextInt(10)+1;
+        this.sabor = "chiocolate";
+        this.color = "amarillo";
     }
 
     public synchronized int consultaPedido() {
